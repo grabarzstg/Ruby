@@ -21,7 +21,7 @@ end
 end
 
 def heapify (t, i, n)
-largest
+
 l = left i
 r = right i
 if l < n && t[l] > t[i]
@@ -52,13 +52,27 @@ end
 def heapsort (t)
 build_heap t
 n =10
-for i in 9..10
+for i in 9..1
 x = t[0]
 t[0]=t[i]
 t[i]=x
-n= n-1
+--n
 heapify(t,0,n)
 end
 end
-
+t = [0,0,0,0,0,0,0,0,0,0,0] 
 srand(Random.new_seed)
+i =0
+for i in 0..9
+t[i]=rand()
+end
+
+for i in 0..9
+puts t[i]
+end
+heapsort t
+puts "______________________"
+for i in 0..9
+puts t[i]
+end
+
