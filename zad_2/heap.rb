@@ -20,8 +20,8 @@ return 2
 end
 end
 
+ # ///////////////////////////////////////////////
 def heapify (t, i, n)
-
 l = left i
 r = right i
 if l < n && t[l] > t[i]
@@ -42,26 +42,33 @@ heapify t, largest, n
 end
 end
 
-
+ # ///////////////////////////////////////////////
 def build_heap (t)
-for i in 5..0
-heapify(t,i,10)
-end
+5.downto(0){|i|
+#puts "for"
+heapify t,i,10
+}
 end
 
-def heapsort (t)
+
+ # ///////////////////////////////////////////////
+def heapsort (t)              
+#puts "heapsort"
 build_heap t
 n =10
-for i in 9..1
+
+9.downto(1){|i|
 x = t[0]
 t[0]=t[i]
 t[i]=x
---n
-heapify(t,0,n)
+n=n-1
+heapify t,0,n
+}
 end
-end
-t = [0,0,0,0,0,0,0,0,0,0,0] 
+
+ # ///////////////////////////////////////////////
 srand(Random.new_seed)
+t = [0,1,2,3,4,5,6,7,8,9] 
 i =0
 for i in 0..9
 t[i]=rand(100)

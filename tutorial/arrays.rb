@@ -21,7 +21,7 @@ array[-1] #=> 5
 array[3, 2] #=> [4, 5]
 
 # lub zasieg.
-array[1..4] #=> [2, 3, 4 5]
+array[1..4] #=> [2, 3, 4, 5]
 
 # Chcesz cos dodac? Zaden problem!
 array << 6 #=> [1, 2, 3, 4, 5, 6]
