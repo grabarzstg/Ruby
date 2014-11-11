@@ -64,7 +64,7 @@ t = [0,0,0,0,0,0,0,0,0,0,0]
 srand(Random.new_seed)
 i =0
 for i in 0..9
-t[i]=rand()
+t[i]=rand(100)
 end
 
 for i in 0..9

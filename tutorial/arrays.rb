@@ -33,7 +33,26 @@ array.[] 100 #=> nil
 # i wyswietlic element tablicy w nieco bardziej obiektowy sposob?
 
 
+# Hasze przechowują dane w postaci węxłów klucz=>wartość 
+# Zapisujemy je w klamrach
+hash = { 'kolor' => 'rudy', 'liczba' => 4 }
 
+hash.keys #=> ['kolor', 'liczba']
+
+# Zawartości haszy łatwo odczytujemy wg kluczy 
+hash['kolor'] #=> 'rudy'
+hash['liczba'] #=> 5
+
+# Poszukując nieistniejącego klucza dojdziemy do nikąd
+hash['nothing here'] #=> nil
+
+# Od wersji 1.9 możemy używać takiego sposobu tworzenia haszy
+new_hash = { defcon: 3, action: true }
+
+new_hash.keys #=> [:defcon, :action]
+
+# Hasze i Tablice dzielą się dużą liczbą metod: np. each, map, count
+# oba są również przeliczalne
 
 
 

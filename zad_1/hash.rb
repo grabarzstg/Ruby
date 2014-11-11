@@ -24,7 +24,7 @@ end
 for i in 1..100
  tablica << 0
 end
- 
+
 puts "Podaj n: "
 n=gets.to_i
 
