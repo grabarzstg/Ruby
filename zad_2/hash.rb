@@ -1,5 +1,3 @@
-
-
 tablica = []
 
 def haszowanie(tablica, klu)
@@ -21,14 +19,14 @@ def haszowanie(tablica, klu)
 	end
 end
 
-for i in 1..100
+(1..100).each do 
  tablica << 0
 end
 
 puts "Podaj n: "
 n=gets.to_i
 
-for i in 1..10
+(1..n).each do |i|
 	puts "podaj element nr: " + i.to_s
 	
 	klucz = gets.to_i
@@ -36,9 +34,11 @@ for i in 1..10
 	haszowanie tablica, klucz
 end
 
-for j in 1..103
+puts 'OUTPUT:'
+(1..103).each do |j|
 	puts tablica[j]
 end
+
 
 
 

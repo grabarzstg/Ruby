@@ -22,6 +22,7 @@ end
 
  # ///////////////////////////////////////////////
 def heapify (t, i, n)
+
 l = left i
 r = right i
 if l < n && t[l] > t[i]
@@ -40,6 +41,7 @@ t[i]=t[largest]
 t[largest]=x
 heapify t, largest, n
 end
+puts ' END'
 end
 
  # ///////////////////////////////////////////////
@@ -68,18 +70,18 @@ end
 
  # ///////////////////////////////////////////////
 srand(Random.new_seed)
-t = [0,1,2,3,4,5,6,7,8,9] 
+t = [10,9,8,7,6,5,4,3,2,1] 
 i =0
-for i in 0..9
+(0..9).each do |i|
 t[i]=rand(100)
 end
 
-for i in 0..9
+(0..9).each do |i|
 puts t[i]
 end
 heapsort t
 puts "______________________"
-for i in 0..9
+(0..9).each do |i|
 puts t[i]
 end
 
