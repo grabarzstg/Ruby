@@ -1,3 +1,3 @@
 //Zadanie pierwsze
 
-Funkcja haszuj¹ca w C++ i Ruby
+How to: Tablice i Hasze w Ruby
