@@ -1,3 +1,7 @@
+require 'simplecov'
+SimpleCov.start
+
+
 load 'heap.rb'
 
 describe "parent" do

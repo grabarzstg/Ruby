@@ -1,3 +1,7 @@
+require 'simplecov'
+SimpleCov.start
+
+
 load 'hash.rb'
 
 describe "haszowanie" do
